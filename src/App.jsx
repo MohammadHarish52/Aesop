@@ -7,16 +7,18 @@ import Second from "./Components/first-3-tag/Second";
 import Third from "./Components/first-3-tag/third";
 import Upfooter from "./Components/Upfooter";
 import Upfootertwo from "./Upfootertwo";
+import StaticCard from "./Components/StaticCards/StaticCard";
 
 function App() {
   return (
     <>
-      <First />
+      {/* <First />
       <Second />
       <Third />
       <Upfootertwo />
       <Upfooter />
-      <Footer />
+      <Footer /> */}
+      <StaticCard />
     </>
   );
 }
