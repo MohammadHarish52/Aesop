@@ -175,6 +175,10 @@ ul {
   color: #e8e8dc;
   padding: 50px 40px;
 }
+.socials ul li {
+  display: flex;
+  align-items: center;
+}
 
 .upper-container {
   border-bottom: 3px solid #d6d5cb;
@@ -234,16 +238,20 @@ ul {
   .upfooter-two h1 {
     font-size: 1.875rem;
   }
-  .static-one {
-    padding-right: 16.6666666667%;
-    padding-left: 16.6666666667%;
-  }
+
   .static-one-img {
     padding-right: 16.6666666667%;
     padding-left: 16.6666666667%;
   }
   .stats_Section {
     padding-top: 100px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .static-one {
+    width: 100%;
+    padding-right: 80px;
+    padding-left: 0;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -257,23 +265,12 @@ ul {
   .upfooter-two {
     padding: 150px 40px;
   }
-  .static-one {
-    width: 33.3333333333%;
-    padding-right: 80px;
-    padding-left: 0;
-  }
-  .static-one-img {
-    width: 66.6666666667%;
-    padding-right: 8.3333333333%;
-    padding-left: 16.6666666667%;
-    margin-bottom: 0;
-  }
+
   .stats_Section {
     padding-top: 150px;
   }
   .staticone {
     justify-content: flex-start;
-    flex-wrap: wrap;
   }
 }
 .uppfooter_card {
@@ -345,9 +342,10 @@ ul {
   justify-content: center;
 }
 .static-one {
-  width: 33.33%;
-
+  flex-wrap: wrap;
+  width: 33.333333%;
   padding-left: 20px;
+  padding-right: 80px;
 }
 .static-one header {
   position: relative;
@@ -376,12 +374,44 @@ ul {
   font-size: 1rem;
   line-height: 1.7;
   margin: 0 0 30px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 .static-one-img {
-  width: 66.67%;
-  padding-right: 20px;
+  flex-wrap: wrap;
+  width: 66.666666667%;
+  padding-right: 8.3333%;
   padding-left: 0px;
   margin-bottom: 30px;
+}
+.learn-more {
+  display: block;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  font-weight: 700;
+  font-size: 0.875rem;
+  width: 85%;
+  padding: 19px 55px 19px 23px;
+}
+.learn-more:hover {
+  background-color: #333;
+  color: #fffef2;
+  transition: 0.9s background-color ease-in-out;
+}
+@media screen and (max-width: 1024px) {
+  .static-one-img {
+    width: 100%;
+    padding-right: 8.3333333333%;
+
+    margin-bottom: 24px;
+  }
+  .static-one {
+    width: 100%;
+    .static-one {
+      padding-right: 16.6666666667%;
+      padding-left: 16.6666666667%;
+    }
+  }
+  .staticone {
+    flex-direction: column;
+  }
 }

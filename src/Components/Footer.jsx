@@ -63,12 +63,24 @@ const Footer = () => {
         </div>
         <div className="about">
           <ul className="list-none">
-            <li>Our story</li>
-            <li>Foundation</li>
-            <li> Carrers</li>
-            <li>Privacy Policy</li>
-            <li> Accessiblity</li>
-            <li> Cookie policy</li>
+            <li>
+              <a href="#">Our story</a>
+            </li>
+            <li>
+              <a href="#">Foundation</a>
+            </li>
+            <li>
+              <a href="#">Carrers</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Accessiblity</a>
+            </li>
+            <li>
+              <a href="#"> Cookie policy</a>
+            </li>
           </ul>
         </div>
         <div className="socials">
@@ -76,7 +88,7 @@ const Footer = () => {
             <li>
               Instagram <GoArrowUpRight />
             </li>
-            <li>
+            <li className="">
               Twitter <GoArrowUpRight />
             </li>
             <li>
@@ -84,7 +96,7 @@ const Footer = () => {
               Linkedln <GoArrowUpRight />
             </li>
             <li>
-              We chat <GoArrowUpRight />
+              Wechat <GoArrowUpRight />
             </li>
             <li>
               Weibo <GoArrowUpRight />
