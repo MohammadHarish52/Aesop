@@ -1,36 +1,8 @@
+import { useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { useRef, useState } from "react";
-
-const data = [
-  {
-    imageSrc: "/src/assets/images/products/serum1.png",
-    title: "Lucent Facial Concentrate",
-    description: "A vitamin-C rich layering Serum",
-  },
-  {
-    imageSrc: "/src/assets/images/products/serum5.avif",
-    title: "B triple C Facial Balancing Gel",
-    description: "Embracing, vitamin-rich hydration",
-  },
-  {
-    imageSrc: "/src/assets/images/products/serum3.png",
-    title: "Exalted Eye Serum",
-    description: "Lightweight, vitamin-rich serum",
-  },
-  {
-    imageSrc: "/src/assets/images/products/serum4.png",
-    title: "Sublime Replenishing Night Masque",
-    description: "Richly nourishing hydration for overnight use",
-  },
-  {
-    imageSrc: "/src/assets/images/products/serum5.avif",
-    title: "Damascan Rose Facial Treatment",
-    description: "A blend of vitamin-rich botanical extracts",
-  },
-];
 
 const CustomDot = ({ onClick, index, active }) => (
   <button
@@ -41,17 +13,31 @@ const CustomDot = ({ onClick, index, active }) => (
   </button>
 );
 
-const ProductSlider = () => {
+const ProductSlider = ({ data }) => {
   const [isHovered, setIsHovered] = useState(false);
   const sliderRef = useRef(null);
 
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 4,
+    speed: 1500,
     slidesToScroll: 1,
+    slidesToShow: 4,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
 
   return (
@@ -62,15 +48,21 @@ const ProductSlider = () => {
     >
       <Slider {...settings} ref={(slider) => (sliderRef.current = slider)}>
         {data.map((product, idx) => (
-          <a href="#" key={idx}>
-            <div className="slider-item flex flex-col relative items-center justify-between h-full text-center p-4">
+          <a
+            href="#"
+            key={idx}
+            className="flex h-[100%] justify-center items-center  text-center box-border"
+          >
+            <div className="slider-item flex flex-col  items-end justify-between  h-[461px] w-[100%] text-center p-4">
               <img
                 src={product.imageSrc}
                 alt={`Product ${idx + 1}`}
-                className="w-full h-auto rounded-lg mb-4"
+                className=" relative max-w-[100%]  rounded-lg mt-auto"
               />
-              <div>
-                <h3 className="text-[14px] my-2 font-[700]">{product.title}</h3>
+              <div className="px-[20px] py-0">
+                <h3 className="text-[14px] my-2 font-[700] hover:underline">
+                  {product.title}
+                </h3>
                 <p className="text-[14px] my-2 font-[400]">
                   {product.description}
                 </p>
@@ -79,6 +71,20 @@ const ProductSlider = () => {
           </a>
         ))}
       </Slider>
+      {isHovered && (
+        <div className="slider-nav absolute top-1/2 transform -translate-y-1/2 w-full flex justify-between">
+          <FaChevronLeft
+            size={40}
+            className="bg-[#252525] text-sm p-4 h-[80px] w-[80px] font-thin  text-[#fffef2] cursor-pointer"
+            onClick={() => sliderRef.current && sliderRef.current.slickPrev()}
+          />
+          <FaChevronRight
+            className="h-[80px] text-sm w-[80px] p-4  font-thin  text-[#fffef2] bg-[#252525] cursor-pointer"
+            size={40}
+            onClick={() => sliderRef.current && sliderRef.current.slickNext()}
+          />
+        </div>
+      )}
     </div>
   );
 };

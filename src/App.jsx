@@ -13,6 +13,7 @@ import RightImage from "./Components/StaticCards/Anthenaeum";
 import MainSlider from "./Components/Mainslider/MainSlider";
 import Fragnance from "./Components/StaticCards/Fragnance";
 import ProductSlider from "./Components/PoductSlider/ProductSlider";
+import { data, datatwo } from "./Components/PoductSlider/constant";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       <First />
       <Second />
       <Third />
-      <ProductSlider />
+      <ProductSlider data={data} />
       {/* <MainSlider /> */}
       <RightImage
         image={"/src/assets/images/Ant.jpg"}
@@ -42,6 +43,7 @@ function App() {
         }
         btntext={"Browse Skin Care Bundles"}
       />
+      <ProductSlider data={datatwo} />
       <StaticCardtwo />
       <RightImage
         image={"/src/assets/images/static.avif"}
