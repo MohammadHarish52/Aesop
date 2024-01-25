@@ -1,120 +1,100 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GoArrowRight } from "react-icons/go";
-import { FaChevronLeft, FaPause } from "react-icons/fa6";
-import { FaAngleRight } from "react-icons/fa6";
-import { FaPlay } from "react-icons/fa";
+import { FaChevronLeft, FaPause, FaPlay, FaChevronRight } from "react-icons/fa";
+
+const slidesData = [
+  {
+    id: 1,
+    imageSrc: "/src/assets/images/top1.avif",
+    title: "Potent And peerless",
+    subheading: "B Triple C Facial Balancing Gel",
+    description:
+      "Rich in Vitamins B and C, this lightly hydrating gel with a honey-like texture, replenishes, softens and balances the skin.",
+    btnText: "Discover Formulation",
+  },
+  {
+    id: 2,
+    imageSrc: "/src/assets/images/top2.avif",
+    title: "A festive gesture",
+    subheading: "Joyous gift preparation",
+    description:
+      "To celebrate the festive season, all gift orders will be wrapped in a decorative sleeve—perfect for sending directly to recipients. Gift wrapping is available to add to your order at checkout.",
+    btnText: "Browse the Gift Guide",
+  },
+  {
+    id: 3,
+    imageSrc: "/src/assets/images/top3.avif",
+    title: "A featherlight hydrating serum",
+    subheading: "Joyous gift preparation",
+    description:
+      "Explore the skin-supportive benefits of this lightweight daily hydrator, replete with vitamins and botanicals",
+    btnText: "Discover more",
+  },
+];
 
 const MainSlider = () => {
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(true);
 
-  const play = () => {
-    setTimeout(
-      setIndex((e) => {
-        if (e >= 1 && e < 3) {
-          e = e + 1;
-        } else if (e === 3) e = 1;
-      })
-    ),
-      2000;
+  useEffect(() => {
+    let interval;
+
+    if (isPlaying) {
+      interval = setInterval(() => {
+        setIndex((prevIndex) => (prevIndex + 1) % slidesData.length);
+      }, 2000);
+    }
+
+    return () => clearInterval(interval);
+  }, [isPlaying]);
+
+  const handlePrev = () => {
+    setIndex(
+      (prevIndex) => (prevIndex - 1 + slidesData.length) % slidesData.length
+    );
   };
 
-  const pause = () => {
-    clearTimeout(play);
+  const handleNext = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % slidesData.length);
   };
-  const [plaay, setPlaay] = useState(play);
+
+  const handlePlayPause = () => {
+    setIsPlaying((prevIsPlaying) => !prevIsPlaying);
+  };
+
+  const currentSlide = slidesData[index];
+
   return (
-    <div className="parent w-auto h-auto absolute stats_Section">
-      <div>
-        <div className={`${index === 1 ? "visible" : "non-visible"}`}>
-          <div className="details">
-            <div className="logo"></div>
-            <div className="details">
-              <header className="header">
-                <h2 className="text-base">Facial Appointments</h2>
-                <h1 className="text-2xl">Composure for the skin and senses</h1>
-              </header>
-              <p></p>
-              <a className="learn-more flex justify-between items-center">
-                <button className="btn btn-primary b-none outline-none ">
-                  Learn More
-                </button>
-                <GoArrowRight size={20} color="" />
-              </a>
-            </div>
-          </div>
-          <div className="static-one-img">
-            <img src="/src/assets/images/top1.avif" alt="" />
-          </div>
+    <div className="parent w-full relative stats_Section bg-[#fffef2] overflow-hidden">
+      <div className="slide flex flex-col-reverse md:flex-row w-full h-full">
+        <div className="details w-[100%] md:w-[50%] p-8 bg-[#f7f5e9]">
+          <header className="header">
+            <h2 className="text-[14px] mb-[15px]">{currentSlide.title}</h2>
+            <h1 className="text-[26px] mb-[15px]">{currentSlide.subheading}</h1>
+          </header>
+          <p className="text-[16px] mb-[30px] leading-[1.7]">
+            {currentSlide.description}
+          </p>
+          <a className="learn-more flex justify-between items-center">
+            <button className="btn btn-primary b-none outline-none">
+              {currentSlide.btnText}
+            </button>
+            <GoArrowRight size={20} color="" />
+          </a>
         </div>
-        <div className={`${index === 2 ? "visible" : "invisible"}`}>
-          <div className="details">
-            <div className="logo"></div>
-            <div className="details">
-              <header className="header">
-                <h2 className="text-base">Facial Appointments</h2>
-                <h1 className="text-2xl">Composure for the skin and senses</h1>
-              </header>
-              <p></p>
-              <a className="learn-more flex justify-between items-center">
-                <button className="btn btn-primary b-none outline-none ">
-                  Learn More
-                </button>
-                <GoArrowRight size={20} color="" />
-              </a>
-            </div>
-            <div className="static-one-img">
-              <img src="/src/assets/images/toptwo.avif" alt="" />
-            </div>
-          </div>
-        </div>
-        <div className={`${index === 3 ? "visible" : "invisible"}`}>
-          <div className="details">
-            <div className="logo"></div>
-            <div className="details">
-              <header className="header">
-                <h2 className="text-base">Facial Appointments</h2>
-                <h1 className="text-2xl">Composure for the skin and senses</h1>
-              </header>
-              <p></p>
-              <a className="learn-more flex justify-between items-center">
-                <button className="btn btn-primary b-none outline-none ">
-                  Learn More
-                </button>
-                <GoArrowRight size={20} color="" />
-              </a>
-            </div>
-            <div className="static-one-img">
-              <img src="/src/assets/images/top3.avif" alt="" />
-            </div>
-          </div>
+        <div className="static-one-img pr-0 w-[100%] md:w-[50%] h-[100%]">
+          <img src={currentSlide.imageSrc} alt="" className="w-full h-full" />
         </div>
       </div>
-      <div className="button">
-        <FaChevronLeft
-          onClick={(e) => {
-            if (e <= 3) {
-              setIndex((prevIndex) => prevIndex - 1);
-            } else if (e === 1) {
-              setIndex(3);
-            }
-          }}
-        />
-        <FaAngleRight
-          onClick={(e) => {
-            if (e >= 1 && e < 4) {
-              setIndex((prevIndex) => prevIndex + 1);
-            } else if (e > 3) {
-              setIndex(1);
-            }
-          }}
-        />
-        {`${
-          plaay ? (
-            <FaPause onClick={setPlaay(() => pause())} />
-          ) : (
-            <FaPlay onClick={setPlaay(() => play())} />
-          )
-        }`}
+      <div className="button flex justify-center items-center">
+        <FaChevronLeft onClick={handlePrev} className="text-[#666666] m-2" />
+        {`${index + 1}/ ${slidesData.length}`}
+        <FaChevronRight onClick={handleNext} className="text-[#666666] m-2" />
+        {isPlaying ? (
+          <FaPause onClick={handlePlayPause} className="text-[#666666] m-2" />
+        ) : (
+          <FaPlay onClick={handlePlayPause} className="text-[#666666] m-2" />
+        )}
       </div>
     </div>
   );

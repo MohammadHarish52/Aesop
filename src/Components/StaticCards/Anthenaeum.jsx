@@ -13,9 +13,12 @@ const RightImage = ({ image, title, subheading, description, btntext }) => {
             <h1 className="text-2xl">{subheading}</h1>
           </header>
           <p>{description}</p>
-          <a className="learn-more flex justify-between items-center">
-            <button className="btn btn-primary b-none outline-none "></button>
-            {btntext}
+          <a className="learn-more flex justify-between items-center ">
+            <button className="btn btn-primary b-none outline-none flex  justify-between items-center md:w-[50%] w-[100%]">
+              {" "}
+              {btntext}
+            </button>
+
             <GoArrowRight size={20} color="" />
           </a>
         </div>

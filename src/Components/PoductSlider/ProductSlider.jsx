@@ -53,13 +53,13 @@ const ProductSlider = ({ data }) => {
             key={idx}
             className="flex h-[100%] justify-center items-center  text-center box-border"
           >
-            <div className="slider-item flex flex-col  items-end justify-between  h-[461px] w-[100%] text-center p-4">
+            <div className="slider-item flex flex-col  items-end justify-center  h-[461px] w-[100%] text-center p-4">
               <img
                 src={product.imageSrc}
                 alt={`Product ${idx + 1}`}
                 className=" relative max-w-[100%]  rounded-lg mt-auto"
               />
-              <div className="px-[20px] py-0">
+              <div className="px-[20px] py-0  w-full ">
                 <h3 className="text-[14px] my-2 font-[700] hover:underline">
                   {product.title}
                 </h3>

@@ -1,6 +1,6 @@
 const First = () => {
   return (
-    <div className="first text-center">
+    <div className="first md:text-center  bg-[#c2c2af]">
       <p className="hover:underline">
         Trained Aesop consultants are available to provide bespoke skin care
         advice.{" "}

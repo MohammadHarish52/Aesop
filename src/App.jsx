@@ -21,8 +21,8 @@ function App() {
       <First />
       <Second />
       <Third />
+      <MainSlider />
       <ProductSlider data={data} />
-      {/* <MainSlider /> */}
       <RightImage
         image={"/src/assets/images/Ant.jpg"}
         title={"The Athenaeum"}

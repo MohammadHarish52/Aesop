@@ -98,7 +98,7 @@ ul {
   z-index: 500;
 }
 .first p {
-  background-color: #d6d5cb;
+  font-size: 14px;
   clear: both;
   height: auto;
   overflow: visible;
@@ -108,6 +108,7 @@ ul {
 }
 .Second {
   background-color: #252525;
+  font-size: 14px;
   color: #fffef2;
   height: auto;
   overflow: visible;
@@ -141,7 +142,9 @@ ul {
   background-color: #fffef2;
 }
 .navbar .left {
+  font-weight: 700;
   display: flex;
+  font-size: calc(10px + 0.3vw);
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -149,12 +152,15 @@ ul {
   pointer-events: auto;
 }
 .navbar .right {
+  font-weight: 700;
+  font-size: calc(10px + 0.3vw);
   pointer-events: none;
   transform: translateX(5px);
 }
 .navbar ul li {
   display: flex;
   height: 80px;
+  padding: 4px;
   align-items: center;
   border-bottom: 2px solid transparent;
   margin-right: 1.3vw;
