@@ -3,7 +3,7 @@ import "/src/App.css";
 
 const Third = () => {
   return (
-    <div className=" navbar flex  ">
+    <div className=" navbar flex sticky top-0  ">
       <div className="left flex justify-center items-center ">
         <ul className="flex">
           <li>Skin care</li>

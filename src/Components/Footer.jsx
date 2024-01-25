@@ -4,12 +4,16 @@ import { GoArrowUpRight } from "react-icons/go";
 const Footer = () => {
   return (
     <div className="footer ">
-      <div className="upper-container flex  ">
+      <div className="upper-container  ">
         <div className="subscribe grid-col-3">
-          <h3 className="border-b-2 ">Subscribe to Aesop Communications</h3>
-          <h2>Email address</h2>
-          <div className="subsinput">
-            <input type="checkbox" name="" id="" />
+          <h3 className="border-b-[1.1px] border-[#fffef2] pb-2 ">
+            Subscribe to Aesop Communications
+          </h3>
+          <h2 className="text-[1.25rem] h-[37px] w-full border-[#fffef2] border-[1.1px] px-2  mt-2 mb-2 rounded-sm">
+            Email address
+          </h2>
+          <div className="subsinput flex ">
+            <input type="checkbox" className="mr-2 mt-2" />
             <p>
               Subscribe to recieve communication From Aesop.By subscribing ,You
               confirm you have read and understood our{" "}
@@ -18,8 +22,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="order">
-          <h3 className="border-b-2">Order And support </h3>
-          <ul className="list-none">
+          <h3 className="border-b-[1.1px] border-[#fffef2] pb-2">
+            Order And support{" "}
+          </h3>
+          <ul className="list-none leading-[1.7] mt-2">
             <li>Contact us</li>
             <li>FAqs</li>
             <li>Shipping</li>
@@ -30,8 +36,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="Services">
-          <h3 className="border-b-2">Services</h3>
-          <ul className="list-none">
+          <h3 className="border-b-[1.1px] border-[#fffef2] pb-2">Services</h3>
+          <ul className="list-none leading-[1.7] mt-2">
             <li>Contact us</li>
             <li>FAqs</li>
             <li>Shipping</li>
@@ -42,27 +48,34 @@ const Footer = () => {
           </ul>
         </div>
         <div className="Services">
-          <h3 className="border-b-2">Location Preferences</h3>
-          <ul className="list-none">
+          <h3 className="border-b-[1.1px] border-[#fffef2] pb-2">
+            Location Preferences
+          </h3>
+          <ul className="list-none leading-[1.7] mt-2">
             <li>Shipping:</li>
-            <li className="">Hong kong ,SAR, China</li>
-            <li> Language</li>
-            <li>English</li>
-            <li>chinnese</li>
+            <li className="underline">Hong kong ,SAR, China</li>
+            <li className="font-[700] mt-2">Language</li>
+            <li className="underline font-[100]">English</li>
+            <li>繁體中文</li>
 
             <li></li>
           </ul>
         </div>
-        <div className="Sustainiblity">
-          <h1>Sustainilblity</h1>
-          <p>
+        <div className="Sustainiblity grid-col-3">
+          <h1 className="border-b-[1.1px] border-[#fffef2] pb-2  ">
+            Sustainilblity
+          </h1>
+          <p className="mt-2">
             All Aesop products are vegan, and we do not test our formulations or
             ingredients on animals. We are Leaping Bunny approved and a
             Certified B Corporation. Learn more
           </p>
         </div>
         <div className="about">
-          <ul className="list-none">
+          <ul className="list-none leading-[1.7]  ">
+            <h1 className="border-b-[1.1px] border-[#fffef2] pb-2 mt-2 ">
+              About
+            </h1>
             <li>
               <a href="#">Our story</a>
             </li>
@@ -83,8 +96,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="socials">
-          <ul className="list-none">
+        <div className="socials ">
+          <ul className="list-none leading-[1.7]">
+            <h1 className="border-b-[1.1px] border-[#fffef2] pb-2 ">Socials</h1>
             <li>
               Instagram <GoArrowUpRight />
             </li>
