@@ -12,6 +12,7 @@ import Bottles from "./Components/StaticCards/Bottles";
 import RightImage from "./Components/StaticCards/Anthenaeum";
 import MainSlider from "./Components/Mainslider/MainSlider";
 import Fragnance from "./Components/StaticCards/Fragnance";
+import ProductSlider from "./Components/PoductSlider/ProductSlider";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <First />
       <Second />
       <Third />
+      <ProductSlider />
       {/* <MainSlider /> */}
       <RightImage
         image={"/src/assets/images/Ant.jpg"}
