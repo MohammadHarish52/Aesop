@@ -7,7 +7,7 @@ const Bottles = () => {
         <div className="wrapper flex flex-col lg:flex-row  box-border">
           <div className="imgbottles w-full flex items-center justify-center lg:w-[33.333%] m-auto lg:pl-[80px]">
             <img
-              src="/src/assets/images/products/bottless.webp"
+              src="/assets/images/products/bottless.webp"
               alt=""
               className="max-w-full h-auto"
             />

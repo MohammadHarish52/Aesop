@@ -19,13 +19,13 @@ const divStyle = {
 
 const slideImages = [
   {
-    src: "/src/assets/images/beautyone.jpg",
+    src: "/assets/images/beautyone.jpg",
   },
   {
-    src: "/src/assets/images/beautytwo.webp",
+    src: "/assets/images/beautytwo.webp",
   },
   {
-    src: "/src/assets/images/beautythree.avif",
+    src: "/assets/images/beautythree.avif",
   },
 ];
 

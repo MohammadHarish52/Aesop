@@ -23,7 +23,7 @@ function App() {
       <MainSlider />
       <ProductSlider data={data} />
       <RightImage
-        image={"/src/assets/images/Ant.jpg"}
+        image={"/assets/images/Ant.jpg"}
         title={"The Athenaeum"}
         subheading={"A guide to caring for dry skin"}
         description={
@@ -34,7 +34,7 @@ function App() {
       <Fragnance />
       <Bottles />
       <RightImage
-        image={"/src/assets/images/lemonlelo.avif"}
+        image={"/assets/images/lemonlelo.avif"}
         title={""}
         subheading={"Efficacious pairings"}
         description={
@@ -45,7 +45,7 @@ function App() {
       <ProductSlider data={datatwo} />
       <StaticCardtwo />
       <RightImage
-        image={"/src/assets/images/static.avif"}
+        image={"/assets/images/static.avif"}
         title={"Facial Appointments"}
         subheading={"A guide to caring for dry skin"}
         description={

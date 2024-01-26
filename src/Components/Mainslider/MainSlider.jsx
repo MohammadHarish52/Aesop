@@ -6,7 +6,7 @@ import "/src/App.css";
 const slidesData = [
   {
     id: 1,
-    imageSrc: "/src/assets/images/top1.avif",
+    imageSrc: "/assets/images/top1.avif",
     title: "Potent And peerless",
     subheading: "B Triple C Facial Balancing Gel",
     description:
@@ -15,7 +15,7 @@ const slidesData = [
   },
   {
     id: 2,
-    imageSrc: "/src/assets/images/top2.avif",
+    imageSrc: "/assets/images/top2.avif",
     title: "A festive gesture",
     subheading: "Joyous gift preparation",
     description:
@@ -24,7 +24,7 @@ const slidesData = [
   },
   {
     id: 3,
-    imageSrc: "/src/assets/images/top3.avif",
+    imageSrc: "/assets/images/top3.avif",
     title: "A featherlight hydrating serum",
     subheading: "Joyous gift preparation",
     description:

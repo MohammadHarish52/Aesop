@@ -25,7 +25,7 @@ const Fragnance = () => {
           </a>
         </div>
         <div className="static-one-img pr-0.5">
-          <img src="/src/assets//images/fragnance.jpg" alt="" />
+          <img src="/assets//images/fragnance.jpg" alt="" />
         </div>
       </div>
     </section>

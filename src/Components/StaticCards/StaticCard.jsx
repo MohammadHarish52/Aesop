@@ -6,7 +6,7 @@ const StaticCard = () => {
       <div className="staticone">
         <div className="static-one-img">
           <img
-            src="/src/assets/images/static.avif"
+            src="/assets/images/static.avif"
             className="h-auto w-full"
             alt=""
           />
