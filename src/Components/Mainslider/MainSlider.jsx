@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { GoArrowRight } from "react-icons/go";
 import { FaChevronLeft, FaPause, FaPlay, FaChevronRight } from "react-icons/fa";
+import "/src/App.css";
 
 const slidesData = [
   {
@@ -42,7 +43,7 @@ const MainSlider = () => {
     if (isPlaying) {
       interval = setInterval(() => {
         setIndex((prevIndex) => (prevIndex + 1) % slidesData.length);
-      }, 2000);
+      }, 4500);
     }
 
     return () => clearInterval(interval);
@@ -65,9 +66,9 @@ const MainSlider = () => {
   const currentSlide = slidesData[index];
 
   return (
-    <div className="parent w-full relative stats_Section bg-[#fffef2] overflow-hidden">
-      <div className="slide flex flex-col-reverse md:flex-row w-full h-full">
-        <div className="details w-[100%] md:w-[50%] p-8 bg-[#f7f5e9]">
+    <div className="parent w-full relative stats_Section pt-[0] md:pt-[80px] bg-[#fffef2] overflow-hidden">
+      <div className="slide flex flex-col-reverse md:flex-row w-full h-[400px] overflow-hidden transition-transform duration-2000">
+        <div className="details  w-[100%] md:w-[50%] p-8 bg-[#f7f5e9]">
           <header className="header">
             <h2 className="text-[14px] mb-[15px]">{currentSlide.title}</h2>
             <h1 className="text-[26px] mb-[15px]">{currentSlide.subheading}</h1>
@@ -82,8 +83,12 @@ const MainSlider = () => {
             <GoArrowRight size={20} color="" />
           </a>
         </div>
-        <div className="static-one-img pr-0 w-[100%] md:w-[50%] h-[100%]">
-          <img src={currentSlide.imageSrc} alt="" className="w-full h-full" />
+        <div className="static-one-img  pr-0 w-[100%] md:w-[50%] h-[100%]">
+          <img
+            src={currentSlide.imageSrc}
+            alt=""
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
       <div className="button flex justify-center items-center">

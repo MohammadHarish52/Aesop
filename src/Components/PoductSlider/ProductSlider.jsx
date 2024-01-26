@@ -46,7 +46,11 @@ const ProductSlider = ({ data }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Slider {...settings} ref={(slider) => (sliderRef.current = slider)}>
+      <Slider
+        {...settings}
+        ref={(slider) => (sliderRef.current = slider)}
+        className="z-1"
+      >
         {data.map((product, idx) => (
           <a
             href="#"

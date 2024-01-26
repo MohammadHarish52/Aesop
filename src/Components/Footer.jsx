@@ -5,16 +5,16 @@ const Footer = () => {
   return (
     <div className="footer ">
       <div className="upper-container  ">
-        <div className="subscribe grid-col-3">
-          <h3 className="border-b-[1.1px] border-[#fffef2] pb-2 ">
+        <div className="subscribe md:col-[1/3] col-[1/4] ">
+          <h3 className="border-b-[1.1px]  border-[#fffef2] pb-2">
             Subscribe to Aesop Communications
           </h3>
           <h2 className="text-[1.25rem] h-[37px] w-full border-[#fffef2] border-[1.1px] px-2  mt-2 mb-2 rounded-sm">
             Email address
           </h2>
-          <div className="subsinput flex ">
+          <div className="subsinput flex  justify-start items-center ">
             <input type="checkbox" className="mr-2 mt-2" />
-            <p>
+            <p className="ml-2">
               Subscribe to recieve communication From Aesop.By subscribing ,You
               confirm you have read and understood our{" "}
               <span className="underline">Privacy policy</span>
@@ -61,7 +61,7 @@ const Footer = () => {
             <li></li>
           </ul>
         </div>
-        <div className="Sustainiblity grid-col-3">
+        <div className="Sustainiblity ">
           <h1 className="border-b-[1.1px] border-[#fffef2] pb-2  ">
             Sustainilblity
           </h1>
@@ -72,11 +72,9 @@ const Footer = () => {
           </p>
         </div>
         <div className="about">
-          <ul className="list-none leading-[1.7]  ">
-            <h1 className="border-b-[1.1px] border-[#fffef2] pb-2 mt-2 ">
-              About
-            </h1>
-            <li>
+          <ul className="list-none leading-[1.7] mt-2  ">
+            <h1 className="border-b-[1.1px] border-[#fffef2]  ">About</h1>
+            <li className="mt-2 ">
               <a href="#">Our story</a>
             </li>
             <li>
@@ -97,9 +95,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="socials ">
-          <ul className="list-none leading-[1.7]">
+          <ul className="list-none leading-[1.7] ">
             <h1 className="border-b-[1.1px] border-[#fffef2] pb-2 ">Socials</h1>
-            <li>
+            <li className="mt-2">
               Instagram <GoArrowUpRight />
             </li>
             <li className="">
@@ -117,6 +115,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="bottom px-[34px] sm:px-[40px] flex items-center h-[72px] justify-between bg-[#252525]">
+        <h1 className="text-[16px] ">&copy; Aesop</h1>
       </div>
     </div>
   );
