@@ -20,7 +20,7 @@ body {
   line-height: 1.7;
   min-height: 100%;
   overflow-x: hidden;
-  position: relative;
+  /* position: relative; */
   -webkit-font-smoothing: antialiased;
 }
 h1,
@@ -118,7 +118,6 @@ ul {
   z-index: 2;
 }
 .navbar {
-  position: absolute;
   z-index: 999999;
   display: flex;
   width: 100%;

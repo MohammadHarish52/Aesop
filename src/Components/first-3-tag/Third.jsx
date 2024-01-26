@@ -103,8 +103,8 @@ const Third = () => {
   }
 
   return (
-    <section className=" bg-[#fffef2] sticky top-0">
-      <div className="opacity-1">
+    <section className=" bg-transparent md:bg-[#fffef2]  opacity-1 md:opacity:0 sticky top-0 z-1">
+      <div className="opacity-1 md:opacity:0">
         <div className="wrapper flex flex-col lg:flex-row  box-border">
           {/* Render the appropriate navbar based on the screen width */}
           {navbar}

@@ -66,9 +66,9 @@ const MainSlider = () => {
   const currentSlide = slidesData[index];
 
   return (
-    <div className="parent w-full relative  top-0 stats_Section pt-[0] md:pt-[80px] bg-[#fffef2] overflow-hidden">
-      <div className="slide   flex flex-col-reverse md:flex-row w-full h-[400px] overflow-hidden transition-transform duration-2000">
-        <div className="details absolute md:left-[50%]  w-[100%] md:w-[50%] p-8 bg-[#f7f5e9]">
+    <div className="parent w-full stats_Section  pt-[0] md:pt-[80px] bg-[#fffef2] overflow-hidden">
+      <div className="slide flex flex-col-reverse   md:static relative md:flex-row  h-[500px] overflow-hidden transition-transform duration-800">
+        <div className="details  md:left-[50%]  w-[100%] md:w-[50%] p-8 bg-[#f7f5e9]">
           <header className="header">
             <h2 className="text-[14px] mb-[15px]">{currentSlide.title}</h2>
             <h1 className="text-[26px] mb-[15px]">{currentSlide.subheading}</h1>
@@ -83,7 +83,7 @@ const MainSlider = () => {
             <GoArrowRight size={20} color="" />
           </a>
         </div>
-        <div className="static-one-img absolute   pr-0 w-[100%] md:w-[50%] h-[100%]">
+        <div className="static-one-img    pr-0 w-[100%] md:w-[50%] h-[100%]">
           <img
             src={currentSlide.imageSrc}
             alt=""
@@ -91,7 +91,7 @@ const MainSlider = () => {
           />
         </div>
       </div>
-      <div className="button flex justify-center items-center">
+      <div className="button  flex justify-center items-center">
         <FaChevronLeft onClick={handlePrev} className="text-[#666666] m-2" />
         {`${index + 1}/ ${slidesData.length}`}
         <FaChevronRight onClick={handleNext} className="text-[#666666] m-2" />

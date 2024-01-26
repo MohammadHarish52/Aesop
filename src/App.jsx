@@ -1,6 +1,5 @@
 import "./App.css";
 import "./index.css";
-import "./lul.css";
 import Footer from "./Components/Footer";
 import First from "./Components/first-3-tag/First";
 import Second from "./Components/first-3-tag/Second";
@@ -9,11 +8,11 @@ import Upfooter from "./Components/Upfooter";
 import Upfootertwo from "./Upfootertwo";
 import StaticCardtwo from "./Components/StaticCards/StaticCard2";
 import Bottles from "./Components/StaticCards/Bottles";
-import RightImage from "./Components/StaticCards/Anthenaeum";
 import MainSlider from "./Components/Mainslider/MainSlider";
 import Fragnance from "./Components/StaticCards/Fragnance";
 import ProductSlider from "./Components/PoductSlider/ProductSlider";
 import { data, datatwo } from "./Components/PoductSlider/constant";
+import RightImage from "./Components/StaticCards/RightImage";
 
 function App() {
   return (
