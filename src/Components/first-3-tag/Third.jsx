@@ -2,7 +2,7 @@ import { CiHeart, CiMenuBurger, CiSearch } from "react-icons/ci";
 import "/src/App.css";
 import { useEffect, useState } from "react";
 
-const Third = () => {
+const Nav = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -114,4 +114,4 @@ const Third = () => {
   );
 };
 
-export default Third;
+export default Nav;

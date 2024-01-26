@@ -3,7 +3,6 @@ import "./index.css";
 import Footer from "./Components/Footer";
 import First from "./Components/first-3-tag/First";
 import Second from "./Components/first-3-tag/Second";
-import Third from "./Components/first-3-tag/third";
 import Upfooter from "./Components/Upfooter";
 import Upfootertwo from "./Upfootertwo";
 import StaticCardtwo from "./Components/StaticCards/StaticCard2";
@@ -13,13 +12,14 @@ import Fragnance from "./Components/StaticCards/Fragnance";
 import ProductSlider from "./Components/PoductSlider/ProductSlider";
 import { data, datatwo } from "./Components/PoductSlider/constant";
 import RightImage from "./Components/StaticCards/RightImage";
+import Nav from "./Components/first-3-tag/third";
 
 function App() {
   return (
     <>
       <First />
       <Second />
-      <Third />
+      <Nav />
       <MainSlider />
       <ProductSlider data={data} />
       <RightImage
