@@ -66,9 +66,9 @@ const MainSlider = () => {
   const currentSlide = slidesData[index];
 
   return (
-    <div className="parent w-full relative stats_Section pt-[0] md:pt-[80px] bg-[#fffef2] overflow-hidden">
-      <div className="slide flex flex-col-reverse md:flex-row w-full h-[400px] overflow-hidden transition-transform duration-2000">
-        <div className="details  w-[100%] md:w-[50%] p-8 bg-[#f7f5e9]">
+    <div className="parent w-full relative  top-0 stats_Section pt-[0] md:pt-[80px] bg-[#fffef2] overflow-hidden">
+      <div className="slide   flex flex-col-reverse md:flex-row w-full h-[400px] overflow-hidden transition-transform duration-2000">
+        <div className="details absolute md:left-[50%]  w-[100%] md:w-[50%] p-8 bg-[#f7f5e9]">
           <header className="header">
             <h2 className="text-[14px] mb-[15px]">{currentSlide.title}</h2>
             <h1 className="text-[26px] mb-[15px]">{currentSlide.subheading}</h1>
@@ -83,7 +83,7 @@ const MainSlider = () => {
             <GoArrowRight size={20} color="" />
           </a>
         </div>
-        <div className="static-one-img  pr-0 w-[100%] md:w-[50%] h-[100%]">
+        <div className="static-one-img absolute   pr-0 w-[100%] md:w-[50%] h-[100%]">
           <img
             src={currentSlide.imageSrc}
             alt=""

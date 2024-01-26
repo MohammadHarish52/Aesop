@@ -42,7 +42,7 @@ const ProductSlider = ({ data }) => {
 
   return (
     <div
-      className="w-full h-auto pt-[150px] bg-[#fffef2] relative inline-block"
+      className="w-full h-auto pt-[150px] bg-[#fffef2]  inline-block"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
