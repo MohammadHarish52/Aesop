@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <div className="footer ">
       <div className="upper-container  ">
-        <div className="subscribe md:col-[1/3] col-[1/4] ">
+        <div className="subscribe ">
           <h3 className="border-b-[1.1px]  border-[#fffef2] pb-2">
             Subscribe to Aesop Communications
           </h3>
-          <h2 className="text-[1.25rem] h-[37px] w-full border-[#fffef2] border-[1.1px] px-2  mt-2 mb-2 rounded-sm">
+          <h2 className="text-[1.25rem] h-[37px]  w-full border-[#fffef2] border-[1.1px] px-2  mt-4 mb-2 rounded-sm">
             Email address
           </h2>
           <div className="subsinput flex  justify-start items-center ">
@@ -25,7 +25,7 @@ const Footer = () => {
           <h3 className="border-b-[1.1px] border-[#fffef2] pb-2">
             Order And support{" "}
           </h3>
-          <ul className="list-none leading-[1.7] mt-2">
+          <ul className="list-none leading-[1.7] mt-4">
             <li>Contact us</li>
             <li>FAqs</li>
             <li>Shipping</li>
@@ -37,11 +37,19 @@ const Footer = () => {
         </div>
         <div className="Services">
           <h3 className="border-b-[1.1px] border-[#fffef2] pb-2">Services</h3>
-          <ul className="list-none leading-[1.7] mt-2">
-            <li>Contact us</li>
-            <li>FAqs</li>
-            <li>Shipping</li>
-            <li>Returns</li>
+          <ul className="list-none leading-[1.7] mt-4">
+            <li className="flex">
+              Contact us <GoArrowUpRight />
+            </li>
+            <li className="flex justify-start items-center">
+              FAQs <GoArrowUpRight />
+            </li>
+            <li className="flex justify-start items-center">
+              Shipping <GoArrowUpRight />
+            </li>
+            <li className="flex justify-start items-center">
+              Returns <GoArrowUpRight />
+            </li>
             <li>Order history</li>
             <li>Check gift card balance</li>
             <li>Order history</li>
@@ -51,7 +59,7 @@ const Footer = () => {
           <h3 className="border-b-[1.1px] border-[#fffef2] pb-2">
             Location Preferences
           </h3>
-          <ul className="list-none leading-[1.7] mt-2">
+          <ul className="list-none leading-[1.7] mt-4">
             <li>Shipping:</li>
             <li className="underline">Hong kong ,SAR, China</li>
             <li className="font-[700] mt-2">Language</li>
@@ -62,7 +70,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="Sustainiblity ">
-          <h1 className="border-b-[1.1px] border-[#fffef2] pb-2  ">
+          <h1 className="border-b-[1.1px] border-[#fffef2] pb-2 mb-4 ">
             Sustainilblity
           </h1>
           <p className="mt-2">
@@ -72,7 +80,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="about">
-          <ul className="list-none leading-[1.7] mt-2  ">
+          <ul className="list-none leading-[1.7] mt-4  ">
             <h1 className="border-b-[1.1px] border-[#fffef2]  ">About</h1>
             <li className="mt-2 ">
               <a href="#">Our story</a>

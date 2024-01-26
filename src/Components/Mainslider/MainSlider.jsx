@@ -67,7 +67,7 @@ const MainSlider = () => {
 
   return (
     <div className="parent w-full stats_Section  pt-[0] md:pt-[80px] bg-[#fffef2] overflow-hidden">
-      <div className="slide flex flex-col-reverse   md:static relative md:flex-row  h-[500px] overflow-hidden transition-transform duration-800">
+      <div className="slide flex flex-col-reverse   md:static relative md:flex-row    overflow-hidden transition-transform duration-800">
         <div className="details  md:left-[50%]  w-[100%] md:w-[50%] p-8 bg-[#f7f5e9]">
           <header className="header">
             <h2 className="text-[14px] mb-[15px]">{currentSlide.title}</h2>
@@ -87,7 +87,7 @@ const MainSlider = () => {
           <img
             src={currentSlide.imageSrc}
             alt=""
-            className="w-full h-full object-cover"
+            className="w-full h-[634px] object-cover "
           />
         </div>
       </div>
