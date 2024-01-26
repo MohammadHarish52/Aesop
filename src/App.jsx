@@ -12,7 +12,7 @@ import Fragnance from "./Components/StaticCards/Fragnance";
 import ProductSlider from "./Components/PoductSlider/ProductSlider";
 import { data, datatwo } from "./Components/PoductSlider/constant";
 import RightImage from "./Components/StaticCards/RightImage";
-import Nav from "./Components/first-3-tag/third";
+import Nav from "./Components/first-3-tag/Topbar";
 
 function App() {
   return (
