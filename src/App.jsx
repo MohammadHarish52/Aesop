@@ -13,6 +13,7 @@ import ProductSlider from "./Components/PoductSlider/ProductSlider";
 import { data, datatwo } from "./Components/PoductSlider/constant";
 import RightImage from "./Components/StaticCards/RightImage";
 import Nav from "./Components/first-3-tag/Topbar";
+import Lemon from "./Components/StaticCards/Lemon";
 
 function App() {
   return (
@@ -33,10 +34,9 @@ function App() {
       />
       <Fragnance />
       <Bottles />
-      <RightImage
+      <Lemon
         image={"/assets/images/lemonlelo.avif"}
-        title={""}
-        subheading={"Efficacious pairings"}
+        title={"Efficacious pairings"}
         description={
           "Our consultants have long combined complementary formulations to effect additional benefits for the skin. Incorporate this time-honoured practice into your regimen with our recommended bundles"
         }

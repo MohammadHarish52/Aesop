@@ -137,11 +137,10 @@ ul {
     -webkit-clip-path 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   will-change: background-color, clip-path;
   line-height: 1.3;
-  color: #252525;
-  border-bottom: 0.5px solid #787777;
+  color: #333;
 }
 .navbar .left {
-  font-weight: 700;
+  font-weight: 400;
   display: flex;
   font-size: calc(10px + 0.3vw);
   padding-left: 0;
@@ -151,7 +150,7 @@ ul {
   pointer-events: auto;
 }
 .navbar .right {
-  font-weight: 700;
+  font-weight: 00;
   font-size: calc(10px + 0.3vw);
   pointer-events: none;
   transform: translateX(5px);

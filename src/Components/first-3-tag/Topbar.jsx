@@ -23,7 +23,7 @@ const Nav = () => {
 
   if (screenWidth > 1028) {
     navbar = (
-      <div className="navbar flex sticky top-0">
+      <div className={`navbar flex sticky top-0`}>
         {/* Left content for larger screens */}
         <div className="left flex justify-center items-center">
           <ul className="flex">

@@ -5,7 +5,7 @@ const Second = () => {
     <div className="Second md:text-center   text-white">
       <p className="hover:underline">
         Click and Collect is now available in Hong Kong. Enjoy complimentary
-        shipping on orders over $400.
+        shipping on orders over $400. {"     "} +
       </p>
     </div>
   );

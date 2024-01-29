@@ -2,7 +2,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const StaticCard = () => {
   return (
-    <section className="stats_Section">
+    <section className="stats_Section pt-[80px] md:pt-[150px]">
       <div className="staticone">
         <div className="static-one-img">
           <img
