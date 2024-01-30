@@ -14,6 +14,7 @@ import { data, datatwo } from "./Components/PoductSlider/constant";
 import RightImage from "./Components/StaticCards/RightImage";
 import Nav from "./Components/first-3-tag/Topbar";
 import Lemon from "./Components/StaticCards/Lemon";
+import FirstSlider from "./Components/FirstSlider";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       <First />
       <Second />
       <Nav />
-      <MainSlider />
+      <FirstSlider />
       <ProductSlider data={data} />
       <RightImage
         image={"/assets/images/Ant.jpg"}

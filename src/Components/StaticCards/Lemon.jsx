@@ -13,7 +13,7 @@ const Lemon = ({ image, title, description, btntext }) => {
           </header>
           <p>{description}</p>
           <a className="learn-more flex justify-between items-center ">
-            <button className="btn btn-primary b-none outline-none flex flex-1  justify-between items-center md:w-[50%] w-[100%]">
+            <button className="btn btn-primary b-none outline-none flex flex-1  justify-between items-center md:w-[50%] w-[90%]">
               {" "}
               {btntext}
             </button>

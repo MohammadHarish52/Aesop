@@ -1,16 +1,16 @@
 import "/src/App.css";
-import { GoArrowUpRight } from "react-icons/go";
+import { GoArrowUpRight, GoArrowRight } from "react-icons/go";
 
 const Footer = () => {
   return (
     <div className="footer ">
       <div className="upper-container  ">
         <div className="subscribe ">
-          <h3 className="border-b-[1.1px]  border-[#fffef2] pb-2">
+          <h3 className="border-b-[1.1px] leading-[2.18] font-semibold  text-[.9375rem] border-[#fffef2] mb-[20px] pb-2">
             Subscribe to Aesop Communications
           </h3>
-          <h2 className="text-[1.25rem] h-[37px]  w-full border-[#fffef2] border-[1.1px] px-2  mt-4 mb-2 rounded-sm">
-            Email address
+          <h2 className="text-[1.0625rem] h-[37px]  w-full border-[#fffef2] border-[1.1px] px-2  mt-4 mb-2 rounded-sm flex  justify-between items-center">
+            Email address <GoArrowRight />
           </h2>
           <div className="subsinput flex  justify-start items-center ">
             <input type="checkbox" className="mr-2 mt-2" />
@@ -22,12 +22,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="order">
-          <h3 className="border-b-[1.1px] border-[#fffef2] pb-2">
+          <h3 className="border-b-[1.1px] font-semibold border-[#fffef2] pb-2 sm:text-[.875rem] text-[.8125rem] leading-[2]">
             Order And support{" "}
           </h3>
-          <ul className="list-none leading-[1.7] mt-4">
+          <ul className="list-none leading-[2.18] font-100 mt-4">
             <li>Contact us</li>
-            <li>FAqs</li>
+            <li>FAQs</li>
             <li>Shipping</li>
             <li>Returns</li>
             <li>Order history</li>
@@ -36,9 +36,11 @@ const Footer = () => {
           </ul>
         </div>
         <div className="Services">
-          <h3 className="border-b-[1.1px] border-[#fffef2] pb-2">Services</h3>
-          <ul className="list-none leading-[1.7] mt-4">
-            <li className="flex">
+          <h3 className="border-b-[1.1px]  font-semibold border-[#fffef2] pb-2">
+            Services
+          </h3>
+          <ul className="list-none leading-[2.18] font-100 mt-4">
+            <li className="flex justify-start items-center">
               Contact us <GoArrowUpRight />
             </li>
             <li className="flex justify-start items-center">
@@ -56,10 +58,10 @@ const Footer = () => {
           </ul>
         </div>
         <div className="Services">
-          <h3 className="border-b-[1.1px] border-[#fffef2] pb-2">
+          <h3 className="border-b-[1.1px]  font-semibold border-[#fffef2] pb-2">
             Location Preferences
           </h3>
-          <ul className="list-none leading-[1.7] mt-4">
+          <ul className="list-none leading-[2.18] font-100 mt-4">
             <li>Shipping:</li>
             <li className="underline">Hong kong ,SAR, China</li>
             <li className="font-[700] mt-2">Language</li>
@@ -69,8 +71,8 @@ const Footer = () => {
             <li></li>
           </ul>
         </div>
-        <div className="Sustainiblity ">
-          <h1 className="border-b-[1.1px] border-[#fffef2] pb-2 mb-4 ">
+        <div className="sustainiblity ">
+          <h1 className="border-b-[1.1px]  font-semibold border-[#fffef2] pb-2 mb-4 ">
             Sustainilblity
           </h1>
           <p className="mt-2">
@@ -80,8 +82,10 @@ const Footer = () => {
           </p>
         </div>
         <div className="about">
-          <ul className="list-none leading-[1.7] mt-4  ">
-            <h1 className="border-b-[1.1px] border-[#fffef2]  ">About</h1>
+          <h1 className="border-b-[1.1px]  font-semibold border-[#fffef2] pb-2 mb-4  ">
+            About
+          </h1>
+          <ul className="list-none leading-[2.18] font-100 mt-4 ">
             <li className="mt-2 ">
               <a href="#">Our story</a>
             </li>
@@ -103,8 +107,10 @@ const Footer = () => {
           </ul>
         </div>
         <div className="socials ">
-          <ul className="list-none leading-[1.7] ">
-            <h1 className="border-b-[1.1px] border-[#fffef2] pb-2 ">Socials</h1>
+          <h1 className="border-b-[1.1px]  font-semibold border-[#fffef2] pb-2 ">
+            Socials
+          </h1>
+          <ul className="list-none leading-[2.18] font-100 mt-4 ">
             <li className="mt-2">
               Instagram <GoArrowUpRight />
             </li>

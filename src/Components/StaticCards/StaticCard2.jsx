@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { GoArrowRight } from "react-icons/go";
 
 import { Slide } from "react-slideshow-image";
@@ -30,6 +31,11 @@ const slideImages = [
 ];
 
 const StaticCardtwo = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleSlideChange = (previous, next) => {
+    setCurrentIndex(next);
+  };
   return (
     <section className="stats_Section">
       <div className="staticone pl-[80px] ">
@@ -49,14 +55,28 @@ const StaticCardtwo = () => {
           </a>
         </div>
         <div className="static-one-img pr-0.5">
-          <Slide>
-            {slideImages.map((image) => (
-              <img
-                src={image.src}
-                key={image.src}
-                className="h-auto w-full"
-                alt=""
-              />
+          <Slide onChange={handleSlideChange} arrows={true}>
+            {slideImages.map((image, index) => (
+              <>
+                <img
+                  src={image.src}
+                  key={image.src}
+                  className="h-auto w-full mb-8"
+                  alt=""
+                />
+                <div className="pagination_base relative mb-4">
+                  <div className="pagination relative flex h-[2px] mx-[34px] mb-[20px] sm:mx-[20px] ">
+                    {slideImages.map((_, index) => (
+                      <div
+                        key={index}
+                        className={`pagination-bar w-[25%] ${
+                          currentIndex === index ? "active" : ""
+                        }`}
+                      ></div>
+                    ))}
+                  </div>
+                </div>
+              </>
             ))}
           </Slide>
         </div>

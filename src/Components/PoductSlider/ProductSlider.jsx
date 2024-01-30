@@ -16,6 +16,7 @@ const CustomDot = ({ onClick, index, active }) => (
 
 const ProductSlider = ({ data }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [paginationBarPosition, setPaginationBarPosition] = useState(0);
   const sliderRef = useRef(null);
 
   const settings = {
@@ -25,6 +26,11 @@ const ProductSlider = ({ data }) => {
     slidesToScroll: 1,
     slidesToShow: 4,
     arrows: false,
+    afterChange: (currentSlide) => {
+      const totalSlides = data.length;
+      const percentagePosition = (currentSlide / (totalSlides - 1)) * 100;
+      setPaginationBarPosition(percentagePosition);
+    },
     responsive: [
       {
         breakpoint: 1440,
@@ -91,6 +97,13 @@ const ProductSlider = ({ data }) => {
             />
           </div>
         )}
+      </div>
+      <div className="pagination_base mt-4 relative">
+        <div className="pagination relative flex h-[2px] mx-[34px] mb-[20px] sm:mx-[20px] ">
+          <div
+            className={`pagination-bar w-[25%] absolute left-[${paginationBarPosition}%] transition`}
+          ></div>
+        </div>
       </div>
     </div>
   );
