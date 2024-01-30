@@ -22,6 +22,7 @@ function App() {
       <First />
       <Second />
       <Nav />
+      <MainSlider />
       <FirstSlider />
       <ProductSlider data={data} />
       <RightImage

@@ -37,11 +37,7 @@ export const datatwo = [
     title: "Parsley seed Anti Oxidant Eye Cream ",
     description: "Nourishes delicate skin around eyes",
   },
-  {
-    imageSrc: "/assets/images/products/twoserum3.webp",
-    title: "Parsley Seed Facial Clensing Oil",
-    description: "Gently liberates Skin of grime and makeup",
-  },
+
   {
     imageSrc: "/assets/images/products/twoserum4.avif",
     title: "Parsley Seed Facial Cleanser ",

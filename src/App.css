@@ -490,3 +490,6 @@ input[type="checkbox"] {
   margin: 0;
   transition: left 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+.skin {
+  font-family: Zapf Humanist, serif;
+}

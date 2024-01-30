@@ -67,10 +67,10 @@ const MainSlider = () => {
 
   return (
     <div className="parent w-full  bg-[#fffef2] overflow-hidden">
-      <div className="slide flex flex-col-reverse   md:static relative md:flex-row    overflow-hidden transition-transform duration-800">
+      <div className="slide flex flex-col-reverse   md:static relative md:flex-row overflow-hidden transition-transform duration-800">
         <div className="details flex justify-around  md:left-[50%]  w-[100%] md:w-[50%] p-8 bg-[#f7f5e9]">
-          <div className="logo text-2xl">Aesop</div>
-          <div className="dit">
+          <div className="text-2xl lg:text-4xl p-4 lg:p-12">Aēsop</div>
+          <div className="dit p-4 lg:p-12">
             <header className="header">
               <h2 className="text-[14px] mb-[15px]">{currentSlide.title}</h2>
               <h1 className="text-[26px] mb-[15px]">
@@ -81,8 +81,8 @@ const MainSlider = () => {
               {currentSlide.description}
             </p>
             <a className="learn-more flex justify-between items-center">
-              <button className="btn btn-primary b-none outline-none">
-                {currentSlide.btnText}
+              <button className="btn btn-primary b-none outline-none flex ">
+                <p className="flex-1">{currentSlide.btnText}</p>
               </button>
               <GoArrowRight size={20} color="" />
             </a>
