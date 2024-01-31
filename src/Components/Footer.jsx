@@ -22,8 +22,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="order">
-          <h1 className="border-b-[1.1px] font-semibold border-[#fffef2] pb-2 sm:text-[.875rem] text-[.8125rem] leading-[2]">
-            Order And support{" "}
+          <h1 className="border-b-[1.1px] font-semibold border-[#fffef2]   box-border  sm:text-[.875rem] text-[.8125rem] leading-[2]">
+            Order
           </h1>
           <ul className="list-none leading-[2.18] font-100 mt-4">
             <li>Contact us</li>
@@ -54,12 +54,11 @@ const Footer = () => {
             </li>
             <li>Order history</li>
             <li>Check gift card balance</li>
-            <li>Order history</li>
           </ul>
         </div>
         <div className="Services">
           <h1 className="border-b-[1.1px]  font-semibold border-[#fffef2] pb-2">
-            Location Preferences
+            Location
           </h1>
           <ul className="list-none leading-[2.18] font-100 mt-4">
             <li>Shipping:</li>

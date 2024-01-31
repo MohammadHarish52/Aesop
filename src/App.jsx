@@ -7,16 +7,16 @@ import Upfooter from "./Components/Upfooter";
 import Upfootertwo from "./Upfootertwo";
 import StaticCardtwo from "./Components/StaticCards/StaticCard2";
 import Bottles from "./Components/StaticCards/Bottles";
-import MainSlider from "./Components/Mainslider/MainSlider";
+
 import Fragnance from "./Components/StaticCards/Fragnance";
 import ProductSlider from "./Components/PoductSlider/ProductSlider";
 import { data, datatwo } from "./Components/PoductSlider/constant";
 import RightImage from "./Components/StaticCards/RightImage";
 import Nav from "./Components/first-3-tag/Topbar";
 import Lemon from "./Components/StaticCards/Lemon";
-import FirstSlider from "./Components/FirstSlider/FirstSlider";
+
 import ProductDetails from "./Components/PoductSlider/ProductDetails";
-import FirstSliderDetails from "./Components/FirstSlider/FirstSliderDetails";
+import MainSlide from "./Components/Mainslider/MainSlide";
 
 function App() {
   return (
@@ -24,9 +24,8 @@ function App() {
       <First />
       <Second />
       <Nav />
-      <MainSlider />
-      <FirstSlider />
-      <FirstSliderDetails />
+      <MainSlide />
+
       <ProductDetails />
       <ProductSlider data={data} />
       <RightImage
