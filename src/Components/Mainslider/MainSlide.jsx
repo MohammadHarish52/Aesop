@@ -16,7 +16,7 @@ const slidesData = [
     subheading: "Joyous gift preparation",
     description:
       "To celebrate the festive season, all gift orders will be wrapped in a decorative sleeve—perfect for sending directly to recipients. Gift wrapping is available to add to your order at checkout.",
-    btnText: "Browse the Gift Guide",
+    btnText: "Browse Gift Guide",
   },
   {
     id: 3,

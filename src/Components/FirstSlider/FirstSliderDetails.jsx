@@ -4,7 +4,7 @@ const FirstSliderDetails = () => {
   return (
     <div className="md:hidden block">
       <div className="flex justify-center items-center ">
-        <div className="details  w-[100%] h-[100%] z-[20] leading-[1.6] font-[1.6rem] bg-[#323233]  text-white px-[80px] md:px[200px] pt-[110px] pb-[110px] flex flex-col justify-start bg-darkGray">
+        <div className="details  w-[100%] h-[100%] z-[20] leading-[1.6] font-[1.6rem] bg-[#323233]  text-white px-[40px] md:px[200px] pt-[110px] pb-[110px] flex flex-col justify-start bg-darkGray">
           <header className="relative flex flex-col">
             <h2 className="sm-[5px] mb-15px text-[14px] mb-[15px] ">
               Online only for a limited time
@@ -20,7 +20,7 @@ const FirstSliderDetails = () => {
           </p>
           <a className="learn-more flex justify-between items-center border-white b-2 hover:bg-[#fffef2] hover:text-[#333]">
             <button className="btn btn-primary outline-none ">
-              <p className="flex-1"> Browse new year gifts</p>
+              <p className="flex-1"> Browse Gifts</p>
             </button>
             <GoArrowRight size={20} className="ml-2" color="" />
           </a>
