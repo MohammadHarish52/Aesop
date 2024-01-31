@@ -14,7 +14,7 @@ const FirstSlider = () => {
         <img
           alt="Sample Aesop Product"
           src="/assets/images/mb.avif"
-          className="w-[272px] h-[272px] z-1 absolute bottom-0 mb-[-0.5px] right-0"
+          className="md:w-[272px] md:h-[272px] w-[232px] h-[232px] z-1 absolute bottom-0 mb-[-0.5px] right-0"
         />
         <div className="hidden md:block md:visible invisible">
           {" "}

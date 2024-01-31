@@ -3,7 +3,7 @@ import { GoArrowRight } from "react-icons/go";
 const Fragnance = () => {
   return (
     <section className="stats_Section">
-      <div className="staticone pl-[80px] ">
+      <div className="staticone pl-[10px] lg:pl-[80px] ">
         <div className="static-one pb-[36px] ">
           <header className="header">
             <h2 className="text-[14px]">Online Only</h2>

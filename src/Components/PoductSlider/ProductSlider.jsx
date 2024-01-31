@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
+import { GoArrowRight } from "react-icons/go";
 
 const CustomDot = ({ onClick, index, active }) => (
   <button
@@ -44,6 +45,12 @@ const ProductSlider = ({ data }) => {
           slidesToShow: 2,
         },
       },
+      {
+        breakpoint: 728,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
     ],
   };
 
@@ -72,8 +79,8 @@ const ProductSlider = ({ data }) => {
                 in mind, to provide daily hydration and the additional benefit
                 of potent vitamins and anti-oxidants.
               </p>
-              <a href="" className="">
-                Browse Formulations
+              <a href="" className=" flex justify-start items-center">
+                Browse Formulations <GoArrowRight className="ml-8" />
               </a>
             </div>
           </div>
@@ -82,9 +89,9 @@ const ProductSlider = ({ data }) => {
             <a
               href="#"
               key={idx}
-              className="flex h-[100%] justify-center items-center text-center box-border"
+              className="flex h-[100%] w-[100%] justify-center items-center text-center box-border"
             >
-              <div className="slider-item flex flex-col items-end justify-start h-[461px] w-[100%] text-center p-4">
+              <div className="slider-item flex flex-col items-center justify-start h-[461px] w-[100%] text-center p-4">
                 <img
                   src={product.imageSrc}
                   alt={`Product ${idx + 1}`}
