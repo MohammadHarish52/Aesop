@@ -38,7 +38,7 @@ const StaticCardtwo = () => {
   };
   return (
     <section className="stats_Section">
-      <div className="staticone pl-[80px] ">
+      <div className="staticone pl-0 md:pl-[80px] ">
         <div className="static-one pb-[36px] ">
           <header className="header">
             <h1 className="text-[30px]">Store Locator</h1>
@@ -47,9 +47,9 @@ const StaticCardtwo = () => {
             Our consultants are available to host you in-store and provide
             tailored guidance on gift purchases.
           </p>
-          <a className="learn-more w-[100%] flex justify-between items-center">
-            <button className="btn btn-primary b-none outline-none font-[600]">
-              Find a nearby store
+          <a className="learn-more flex  justify-between items-center">
+            <button className="btn btn-primary  b-none outline-none ">
+              Find a Store
             </button>
             <GoArrowRight size={20} color="" />
           </a>

@@ -45,7 +45,7 @@ function App() {
         description={
           "Our consultants have long combined complementary formulations to effect additional benefits for the skin. Incorporate this time-honoured practice into your regimen with our recommended bundles"
         }
-        btntext={"Browse Skin Care Bundles"}
+        btntext={"Browse Skin Care "}
       />
       <ProductDetails />
       <ProductSlider data={datatwo} />

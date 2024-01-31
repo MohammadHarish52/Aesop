@@ -2,7 +2,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const Lemon = ({ image, title, description, btntext }) => {
   return (
-    <section className="stats_Section">
+    <section className="stats_Section ">
       <div className="staticone">
         <div className="static-one-img">
           <img src={image} className="h-auto w-full" alt="" />
@@ -12,12 +12,10 @@ const Lemon = ({ image, title, description, btntext }) => {
             <h1 className="text-2xl">{title}</h1>
           </header>
           <p>{description}</p>
-          <a className="learn-more flex justify-between items-center  sm:w-[80%] ">
-            <button className="btn btn-primary b-none outline-none md:text-[.875rem] flex flex-1  box-border justify-between font-semibold items-center ">
-              {" "}
+          <a className="learn-more flex  justify-between items-center">
+            <button className="btn btn-primary  b-none outline-none ">
               {btntext}
             </button>
-
             <GoArrowRight size={20} color="" />
           </a>
         </div>

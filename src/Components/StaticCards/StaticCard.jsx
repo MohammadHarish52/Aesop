@@ -22,7 +22,7 @@ const StaticCard = () => {
             intensely nourish the skin.
           </p>
           <a className="learn-more flex justify-between items-center">
-            <button className="btn btn-primary b-none outline-none ">
+            <button className="btn btn-primary flex-1 b-none outline-none ">
               Learn More
             </button>
             <GoArrowRight size={20} color="" />
