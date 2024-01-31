@@ -59,7 +59,7 @@ const ProductSlider = ({ data }) => {
           ref={(slider) => (sliderRef.current = slider)}
           className="w-full"
         >
-          <div className="detailing relative flex h-[100%] flex-col text-[0.9375rem] box border border-none px-16">
+          <div className="detailing relative flex h-[auto] w-[100%] flex-col text-[0.9375rem] box border border-none px-16">
             <h2 className="text-[14px] mb-[5px] font-semibold ">Skin Care+</h2>
             <h1 className="text-[30px] mb-[10px] skin font-medium">
               Intensive formulations for complex skin
@@ -73,6 +73,7 @@ const ProductSlider = ({ data }) => {
               Browse Formulations
             </a>
           </div>
+
           {data.map((product, idx) => (
             <a
               href="#"
@@ -85,7 +86,7 @@ const ProductSlider = ({ data }) => {
                   alt={`Product ${idx + 1}`}
                   className="relative max-w-[80%] rounded-lg mt-auto"
                 />
-                <div className="px-[20px] py-0 w-[80%]">
+                <div className="px-[20px] py-0 w-[84%]">
                   <h3 className="text-[14px] my-2 font-[700] hover:underline">
                     {product.title}
                   </h3>
@@ -101,11 +102,11 @@ const ProductSlider = ({ data }) => {
           <div className="slider-nav absolute top-1/2 transform -translate-y-1/2 w-full flex justify-between">
             <AiOutlineLeft
               size={40}
-              className="bg-[#252525] text-sm p-6 h-[80px] w-[80px] font-thin text-[#fffef2] cursor-pointer"
+              className="bg-[#323233] text-sm p-6 h-[80px] w-[80px] font-thin text-[#fffef2] cursor-pointer"
               onClick={() => sliderRef.current && sliderRef.current.slickPrev()}
             />
             <AiOutlineRight
-              className="h-[80px] text-sm w-[80px] p-6 font-thin text-[#fffef2] bg-[#252525] cursor-pointer"
+              className="h-[80px] text-sm w-[80px] p-6 font-thin text-[#fffef2] bg-[#323233] cursor-pointer"
               size={40}
               onClick={() => sliderRef.current && sliderRef.current.slickNext()}
             />

@@ -47,8 +47,8 @@ const StaticCardtwo = () => {
             Our consultants are available to host you in-store and provide
             tailored guidance on gift purchases.
           </p>
-          <a className="learn-more flex justify-between items-center">
-            <button className="btn btn-primary b-none outline-none ">
+          <a className="learn-more w-[100%] flex justify-between items-center">
+            <button className="btn btn-primary b-none outline-none font-[600]">
               Find a nearby store
             </button>
             <GoArrowRight size={20} color="" />

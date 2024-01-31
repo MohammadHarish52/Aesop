@@ -18,7 +18,7 @@ const Fragnance = () => {
             bottles.
           </p>
           <a className="learn-more flex justify-between items-center">
-            <button className="btn btn-primary b-none outline-none ">
+            <button className="btn btn-primary b-none outline-none font-[600] ">
               Discover Now
             </button>
             <GoArrowRight size={20} color="" />

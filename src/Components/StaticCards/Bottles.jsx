@@ -21,7 +21,7 @@ const Bottles = () => {
                 mouse to conceal last-minute selections.{" "}
               </p>
             </header>
-            <button className="learn-more pl-[23px]  w-[100%] md:w-[50%] flex justify-between">
+            <button className="learn-more pl-[23px] font-[600]  w-[100%] md:w-[50%] flex justify-between">
               Purchase now <GoArrowRight size={20} />
             </button>
           </div>

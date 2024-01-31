@@ -12,8 +12,8 @@ const Lemon = ({ image, title, description, btntext }) => {
             <h1 className="text-2xl">{title}</h1>
           </header>
           <p>{description}</p>
-          <a className="learn-more flex justify-between items-center ">
-            <button className="btn btn-primary b-none outline-none flex flex-1  justify-between items-center md:w-[50%] w-[90%]">
+          <a className="learn-more flex justify-between items-center  sm:w-[80%] flex-1 ">
+            <button className="btn btn-primary b-none outline-none text-[.875rem] flex flex-1  box-border justify-between font-semibold items-center ">
               {" "}
               {btntext}
             </button>

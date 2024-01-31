@@ -4,20 +4,30 @@ import { useEffect, useState } from "react";
 
 const Nav = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
 
-    // Attach the event listener
-    window.addEventListener("resize", handleResize);
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setIsScrollingUp(currentScrollPos < prevScrollPos);
+      setPrevScrollPos(currentScrollPos);
+    };
 
-    // Detach the event listener when the component unmounts
+    // Attach the event listeners
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+
+    // Detach the event listeners when the component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [prevScrollPos]);
 
   let navbar;
 
@@ -80,21 +90,24 @@ const Nav = () => {
     navbar = (
       <div className="navbar flex sticky top-0">
         <div className="logo flex justify-center items-center">
-          <h1 className="text-2xl">Aesop</h1>
+          <h1 className="text-2xl">Aēsop</h1>
         </div>
-        <div className="right flex  flex-row justify-center items-center">
+        <div className="right flex flex-2 flex-row justify-between items-center">
           <ul className="flex ">
             <li>
-              <CiSearch className=" flex justify-center items-center leading-normal" />
+              <CiSearch
+                size={25}
+                className=" flex justify-center items-center leading-normal"
+              />
             </li>
             <li>
-              <CiHeart />
+              <CiHeart size={25} />
             </li>
             <li className="font-[400] hover:border-b-8 hovwer:border-black">
               Cart
             </li>
             <li>
-              <CiMenuBurger />
+              <CiMenuBurger size={25} />
             </li>
           </ul>
         </div>
@@ -103,8 +116,12 @@ const Nav = () => {
   }
 
   return (
-    <section className=" bg-transparent md:bg-[#fffef2]  opacity-1 md:opacity:0 sticky top-0 z-1">
-      <div className="opacity-1 md:opacity:0">
+    <section
+      className={`bg-transparent md:bg-[#fffef2] ${
+        isScrollingUp ? "sticky" : ""
+      } top-0 z-10000 opacity-1 sm:opacity:1`}
+    >
+      <div className="opacity-1 sm:opacity:1">
         <div className="wrapper flex flex-col lg:flex-row  box-border">
           {/* Render the appropriate navbar based on the screen width */}
           {navbar}

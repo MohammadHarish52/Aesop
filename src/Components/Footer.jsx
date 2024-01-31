@@ -6,15 +6,15 @@ const Footer = () => {
     <div className="footer ">
       <div className="upper-container  ">
         <div className="subscribe ">
-          <h3 className="border-b-[1.1px] leading-[2.18] font-semibold  text-[.9375rem] border-[#fffef2] mb-[20px] pb-2">
+          <h1 className="border-b-[1.1px] leading-[2.18] font-semibold  text-[.9375rem] border-[#fffef2] mb-[20px] pb-2">
             Subscribe to Aesop Communications
-          </h3>
-          <h2 className="text-[1.0625rem] h-[37px]  w-full border-[#fffef2] border-[1.1px] px-2  mt-4 mb-2 rounded-sm flex  justify-between items-center">
+          </h1>
+          <h2 className="text-[1.0625rem] h-[37px]  w-full border-[#fffef2] border-[1.1px] px-2 text-[12px] sm:text-[14px]  mt-4 mb-2 rounded-sm flex  justify-between items-center">
             Email address <GoArrowRight />
           </h2>
           <div className="subsinput flex  justify-start items-center ">
             <input type="checkbox" className="mr-2 mt-2" />
-            <p className="ml-2">
+            <p className="ml-2 text-[12px] sm:text-[14px]">
               Subscribe to recieve communication From Aesop.By subscribing ,You
               confirm you have read and understood our{" "}
               <span className="underline">Privacy policy</span>
@@ -22,9 +22,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="order">
-          <h3 className="border-b-[1.1px] font-semibold border-[#fffef2] pb-2 sm:text-[.875rem] text-[.8125rem] leading-[2]">
+          <h1 className="border-b-[1.1px] font-semibold border-[#fffef2] pb-2 sm:text-[.875rem] text-[.8125rem] leading-[2]">
             Order And support{" "}
-          </h3>
+          </h1>
           <ul className="list-none leading-[2.18] font-100 mt-4">
             <li>Contact us</li>
             <li>FAQs</li>
@@ -36,9 +36,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="Services">
-          <h3 className="border-b-[1.1px]  font-semibold border-[#fffef2] pb-2">
+          <h1 className="border-b-[1.1px]  font-semibold border-[#fffef2] pb-2">
             Services
-          </h3>
+          </h1>
           <ul className="list-none leading-[2.18] font-100 mt-4">
             <li className="flex justify-start items-center">
               Contact us <GoArrowUpRight />
@@ -58,9 +58,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="Services">
-          <h3 className="border-b-[1.1px]  font-semibold border-[#fffef2] pb-2">
+          <h1 className="border-b-[1.1px]  font-semibold border-[#fffef2] pb-2">
             Location Preferences
-          </h3>
+          </h1>
           <ul className="list-none leading-[2.18] font-100 mt-4">
             <li>Shipping:</li>
             <li className="underline">Hong kong ,SAR, China</li>
@@ -75,7 +75,7 @@ const Footer = () => {
           <h1 className="border-b-[1.1px]  font-semibold border-[#fffef2] pb-2 mb-4 ">
             Sustainilblity
           </h1>
-          <p className="mt-2">
+          <p className="mt-2 text-[12px] sm:text-[14px]">
             All Aesop products are vegan, and we do not test our formulations or
             ingredients on animals. We are Leaping Bunny approved and a
             Certified B Corporation. Learn more
