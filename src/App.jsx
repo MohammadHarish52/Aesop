@@ -14,7 +14,9 @@ import { data, datatwo } from "./Components/PoductSlider/constant";
 import RightImage from "./Components/StaticCards/RightImage";
 import Nav from "./Components/first-3-tag/Topbar";
 import Lemon from "./Components/StaticCards/Lemon";
-import FirstSlider from "./Components/FirstSlider";
+import FirstSlider from "./Components/FirstSlider/FirstSlider";
+import ProductDetails from "./Components/PoductSlider/ProductDetails";
+import FirstSliderDetails from "./Components/FirstSlider/FirstSliderDetails";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
       <Nav />
       <MainSlider />
       <FirstSlider />
+      <FirstSliderDetails />
+      <ProductDetails />
       <ProductSlider data={data} />
       <RightImage
         image={"/assets/images/Ant.jpg"}
@@ -44,6 +48,7 @@ function App() {
         }
         btntext={"Browse Skin Care Bundles"}
       />
+      <ProductDetails />
       <ProductSlider data={datatwo} />
       <StaticCardtwo />
       <RightImage

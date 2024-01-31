@@ -509,3 +509,6 @@ input[type="checkbox"] {
 .skin {
   font-family: Zapf Humanist, serif;
 }
+.hide {
+  display: none;
+}

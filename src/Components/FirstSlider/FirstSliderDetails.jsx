@@ -1,25 +1,12 @@
 import { GoArrowRight } from "react-icons/go";
 
-const FirstSlider = () => {
+const FirstSliderDetails = () => {
   return (
-    <div className="relative  z-10 box-border overflow-hidden h-[679px] flex">
-      <img
-        src="/assets/images/main.avif"
-        className="w-full h-[679px] object-cover absolute"
-        alt="A swirling red texture."
-      />
-      <img
-        alt="Sample Aesop Product"
-        src="/assets/images/mb.avif"
-        className="w-[272px] h-[272px] z-1 absolute bottom-0 mb-[-0.5px] right-0"
-      />
-      <div className="left flex flex-row  lg:flex-col">
-        <div className="logo absolute top-[15%] left-[5%] text-[#fffef2] w-full h-full ">
-          <h1 className="text-2xl lg:text-4xl">Aēsop</h1>
-        </div>
-        <div className="details absolute top-0 left-[25%] lg:left-[15%] w-[60%] lg:w-[20%] z-[20] leading-[1.6] font-[1.6rem] text-white px-0 pt-[110px] pb-[180px] flex flex-col justify-start bg-darkGray">
+    <div className="md:hidden block">
+      <div className="flex justify-center items-center ">
+        <div className="details  w-[100%] h-[100%] z-[20] leading-[1.6] font-[1.6rem] bg-[#323233]  text-white px-[80px] md:px[200px] pt-[110px] pb-[110px] flex flex-col justify-start bg-darkGray">
           <header className="relative flex flex-col">
-            <h2 className="sm-[5px] mb-15px text-[14px] mb-[30px] ">
+            <h2 className="sm-[5px] mb-15px text-[14px] mb-[15px] ">
               Online only for a limited time
             </h2>
             <h1 className="text-[30px] mb-[15px] order-2">
@@ -43,4 +30,4 @@ const FirstSlider = () => {
   );
 };
 
-export default FirstSlider;
+export default FirstSliderDetails;

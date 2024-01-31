@@ -49,7 +49,7 @@ const ProductSlider = ({ data }) => {
 
   return (
     <div
-      className="w-full h-auto pt-[150px] bg-[#fffef2] relative inline-block"
+      className="w-full h-auto  pt-[0px] md:pt-[150px] bg-[#fffef2] relative inline-block"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -59,19 +59,23 @@ const ProductSlider = ({ data }) => {
           ref={(slider) => (sliderRef.current = slider)}
           className="w-full"
         >
-          <div className="detailing relative flex h-[auto] w-[100%] flex-col text-[0.9375rem] box border border-none px-16">
-            <h2 className="text-[14px] mb-[5px] font-semibold ">Skin Care+</h2>
-            <h1 className="text-[30px] mb-[10px] skin font-medium">
-              Intensive formulations for complex skin
-            </h1>
-            <p className="text-[14px] mb-[30px]">
-              Explore products formulated with mature skin and urban dwellers in
-              mind, to provide daily hydration and the additional benefit of
-              potent vitamins and anti-oxidants.
-            </p>
-            <a href="" className="">
-              Browse Formulations
-            </a>
+          <div className="hidden md:block md:visible invisible">
+            <div className="detailing relative flex h-[auto] w-[100%] flex-col text-[0.9375rem] box border border-none px-16">
+              <h2 className="text-[14px] mb-[5px] font-semibold ">
+                Skin Care+
+              </h2>
+              <h1 className="text-[30px] mb-[10px] skin font-medium">
+                Intensive formulations for complex skin
+              </h1>
+              <p className="text-[14px] mb-[30px]">
+                Explore products formulated with mature skin and urban dwellers
+                in mind, to provide daily hydration and the additional benefit
+                of potent vitamins and anti-oxidants.
+              </p>
+              <a href="" className="">
+                Browse Formulations
+              </a>
+            </div>
           </div>
 
           {data.map((product, idx) => (
